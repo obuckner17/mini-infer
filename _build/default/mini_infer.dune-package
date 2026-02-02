@@ -1,0 +1,71 @@
+(lang dune 3.21)
+(name mini_infer)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   analysis.ml
+   ast.ml
+   dune-package
+   lexer.ml
+   mini_infer.a
+   mini_infer.cma
+   mini_infer.cmi
+   mini_infer.cmt
+   mini_infer.cmx
+   mini_infer.cmxa
+   mini_infer.ml
+   mini_infer__Analysis.cmi
+   mini_infer__Analysis.cmt
+   mini_infer__Analysis.cmx
+   mini_infer__Ast.cmi
+   mini_infer__Ast.cmt
+   mini_infer__Ast.cmx
+   mini_infer__Lexer.cmi
+   mini_infer__Lexer.cmt
+   mini_infer__Lexer.cmx
+   mini_infer__Parser.cmi
+   mini_infer__Parser.cmt
+   mini_infer__Parser.cmti
+   mini_infer__Parser.cmx
+   opam
+   parser.ml
+   parser.mli))
+ (libexec (mini_infer.cmxs))
+ (bin (mini_infer)))
+(library
+ (name mini_infer)
+ (kind normal)
+ (archives (byte mini_infer.cma) (native mini_infer.cmxa))
+ (plugins (byte mini_infer.cma) (native mini_infer.cmxs))
+ (native_archives mini_infer.a)
+ (requires ocamlgraph base)
+ (main_module_name Mini_infer)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name mini_infer)
+     (visibility public)
+     (kind alias)
+     (source (path Mini_infer) (impl (path mini_infer.ml-gen))))
+    (name Mini_infer)
+    (modules
+     (module
+      (obj_name mini_infer__Analysis)
+      (visibility public)
+      (source (path Analysis) (impl (path analysis.ml))))
+     (module
+      (obj_name mini_infer__Ast)
+      (visibility public)
+      (source (path Ast) (impl (path ast.ml))))
+     (module
+      (obj_name mini_infer__Lexer)
+      (visibility public)
+      (source (path Lexer) (impl (path lexer.ml))))
+     (module
+      (obj_name mini_infer__Parser)
+      (visibility public)
+      (source (path Parser) (intf (path parser.mli)) (impl (path parser.ml))))))
+   (wrapped true))))

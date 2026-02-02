@@ -1,0 +1,15 @@
+type token =
+    SEMI
+  | RPAREN
+  | NULL
+  | LPAREN
+  | LET
+  | ID of string
+  | EQUAL
+  | EOF
+  | DEREF
+val menhir_begin_marker : int
+val xv_stmt : Ast.statement
+val xv_prog : Ast.program
+val xv_expr : Ast.expression
+val menhir_end_marker : int

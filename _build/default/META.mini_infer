@@ -1,0 +1,6 @@
+description = ""
+requires = "base ocamlgraph"
+archive(byte) = "mini_infer.cma"
+archive(native) = "mini_infer.cmxa"
+plugin(byte) = "mini_infer.cma"
+plugin(native) = "mini_infer.cmxs"

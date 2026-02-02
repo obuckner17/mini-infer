@@ -1,0 +1,36 @@
+lib: [
+  "_build/install/default/lib/mini_infer/META"
+  "_build/install/default/lib/mini_infer/analysis.ml"
+  "_build/install/default/lib/mini_infer/ast.ml"
+  "_build/install/default/lib/mini_infer/dune-package"
+  "_build/install/default/lib/mini_infer/lexer.ml"
+  "_build/install/default/lib/mini_infer/mini_infer.a"
+  "_build/install/default/lib/mini_infer/mini_infer.cma"
+  "_build/install/default/lib/mini_infer/mini_infer.cmi"
+  "_build/install/default/lib/mini_infer/mini_infer.cmt"
+  "_build/install/default/lib/mini_infer/mini_infer.cmx"
+  "_build/install/default/lib/mini_infer/mini_infer.cmxa"
+  "_build/install/default/lib/mini_infer/mini_infer.ml"
+  "_build/install/default/lib/mini_infer/mini_infer__Analysis.cmi"
+  "_build/install/default/lib/mini_infer/mini_infer__Analysis.cmt"
+  "_build/install/default/lib/mini_infer/mini_infer__Analysis.cmx"
+  "_build/install/default/lib/mini_infer/mini_infer__Ast.cmi"
+  "_build/install/default/lib/mini_infer/mini_infer__Ast.cmt"
+  "_build/install/default/lib/mini_infer/mini_infer__Ast.cmx"
+  "_build/install/default/lib/mini_infer/mini_infer__Lexer.cmi"
+  "_build/install/default/lib/mini_infer/mini_infer__Lexer.cmt"
+  "_build/install/default/lib/mini_infer/mini_infer__Lexer.cmx"
+  "_build/install/default/lib/mini_infer/mini_infer__Parser.cmi"
+  "_build/install/default/lib/mini_infer/mini_infer__Parser.cmt"
+  "_build/install/default/lib/mini_infer/mini_infer__Parser.cmti"
+  "_build/install/default/lib/mini_infer/mini_infer__Parser.cmx"
+  "_build/install/default/lib/mini_infer/opam"
+  "_build/install/default/lib/mini_infer/parser.ml"
+  "_build/install/default/lib/mini_infer/parser.mli"
+]
+libexec: [
+  "_build/install/default/lib/mini_infer/mini_infer.cmxs"
+]
+bin: [
+  "_build/install/default/bin/mini_infer"
+]

@@ -1,0 +1,10 @@
+(library
+ (name mini_infer)
+ (public_name mini_infer)
+ (libraries ocamlgraph base)
+ (modules ast lexer parser analysis))
+
+(ocamllex lexer)
+
+(menhir
+ (modules parser))
