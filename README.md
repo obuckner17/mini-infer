@@ -1,3 +1,5 @@
+![Build Status](https://github.com/your-username/mini-infer/actions/workflows/main.yml/badge.svg)
+
 # Mini-Infer: A Static Analysis Engine in OCaml
 
 Mini-Infer is a proof-of-concept static analyzer inspired by. It uses **Abstract Interpretation** to detect null pointer dereferences without actually executing the code.
